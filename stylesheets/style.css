@@ -457,6 +457,19 @@ h6 {
     z-index: 1000; /* 确保浮窗在其他元素上面 */
 }
 
+.txt-info {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 255);
+    color: black;
+    padding: 0px 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, 0.3);
+    display: none; /* 初始状态为隐藏 */
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000; /* 确保浮窗在其他元素上面 */
+}
+
 .social-links li {
     display: inline-block;
     margin-left: 1px;
@@ -494,8 +507,12 @@ h6 {
     display: block;
 }
 
+.social-links a:hover .txt-info{
+    display: block;
+}
 
-/* Style2 */
+
+    /* Style2 */
 .social-links.style2 a {
     width: 50px;
     height: 50px;
