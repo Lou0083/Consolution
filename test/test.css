@@ -1,0 +1,43 @@
+/* 设置ul和li的样式 */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative;  /* 设置为相对定位 */
+    margin: 10px 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 初始隐藏浮层 */
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;  /* 定位在列表项的正下方 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 10;  /* 确保浮层显示在其他元素之上 */
+}
+
+/* 当鼠标悬停在菜单项时显示浮层 */
+.menu-item:hover .tooltip {
+    display: block;
+}
